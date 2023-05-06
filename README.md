@@ -4,5 +4,5 @@ The docker image also adds the Postgres dependency since it is a fairly common d
 
 ### usage
 ```console
-docker build --build-arg RUBY_VER=<RUBY_VERSION> -t rails-builder -f Dockerfile.rails https://github.com/kjleng/rails-builder.git#main && docker run -it --rm -v $PWD:/app rails-builder rails new <PROJECT_NAME> --api --database=postgresql
+docker build --build-arg RUBY_VER=<RUBY_VERSION> -t rails-builder https://github.com/kjleng/rails-builder.git#main && docker run -it --rm -v $PWD:/app rails-builder rails new <PROJECT_NAME> --api --database=postgresql
 ```
