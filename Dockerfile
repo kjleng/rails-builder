@@ -1,7 +1,7 @@
 ARG RUBY_VER=3.2.2
 FROM ruby:${RUBY_VER}-alpine
 
-RUN apk add --no-cache alpine-sdk postgresql-dev
+RUN apk add --no-cache build-base postgresql-dev
 
 # Default directory
 WORKDIR /app
